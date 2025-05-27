@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Windstorm Predictor</title>
+  <meta charset="UTF-8">
+  <title>Windstorm Predictor</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding: 30px; }
+    input { padding: 10px; margin: 5px; }
+    button { padding: 10px 20px; }
+    #result { margin-top: 20px; font-size: 18px; font-weight: bold; }
+  </style>
 </head>
 <body>
-    <h2>Windstorm Prediction App</h2>
-    <form action="/predict" method="post">
-        <label>Humidity:</label>
-        <input type="text" name="humidity" required><br><br>
-        <label>Pressure:</label>
-        <input type="text" name="pressure" required><br><br>
-        <label>Temperature:</label>
-        <input type="text" name="temperature" required><br><br>
-        <input type="submit" value="Predict">
-    </form>
-    <h3>{{ prediction_text }}</h3>
+  <h1>Windstorm Predictor</h1>
+  <p>Enter weather conditions to check for windstorm risk.</p>
+  
+  <input type="number" id="humidity" placeholder="Humidity (%)"><br>
+  <input type="number" id="pressure" placeholder="Pressure (hPa)"><br>
+  <input type="number" id="temperature" placeholder="Temperature (°C)"><br>
+  <button onclick="predictStorm()">Predict</button>
+
+  <div id="result"></div>
+
+  <script src="predict.js"></script>
 </body>
 </html>

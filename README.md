@@ -34,6 +34,7 @@ This project is a machine learning-based solution that predicts the likelihood o
 
 ---
 
-## Screenshots
-![]()
-![]()
+## User Interface
+![](https://github.com/Veerapaneni-Deepika/WindStorm_Prediction/blob/master/WindStormPrediction-1.png)
+![](https://github.com/Veerapaneni-Deepika/WindStorm_Prediction/blob/master/WindStormPrediction-2.png)
+![](https://github.com/Veerapaneni-Deepika/WindStorm_Prediction/blob/master/WindStormPrediction-3.png)
